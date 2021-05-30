@@ -1,7 +1,7 @@
 #! /bin/bash -x
 
 
-echo "Wlecome to Employ Waege Computation Problem."
+echo "Wlecome to Employ Wage Computation Problem."
 
 absent=0
 present=1
@@ -16,3 +16,11 @@ elif [ $check -eq 1 ]
 then
 echo "employe is present."
 fi
+
+
+wege_pe_hr=20
+full_day_hr=8
+
+
+
+
