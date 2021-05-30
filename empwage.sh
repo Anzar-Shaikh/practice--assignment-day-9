@@ -38,6 +38,9 @@ working_day=0
 #else echo "employe is present part-time."
 #fi
 
+function emplyHrs() {
+
+local empCheck=$1
 
 case $empCheck in
 
@@ -47,7 +50,11 @@ case $empCheck in
 
 esac
 
-#echo "Employe hours of the day is $empHr. "
+	echo $empHr
+}
+
+
+	empHr=$( emplyHrs $empCheck)
 
 
 
