@@ -4,8 +4,7 @@
 echo "Wlecome to Employ Wage Computation Problem."
 
 
-
-wege_pe_hr=20
+wege_per_hr=20
 full_time_hr=8
 part_time_hr=4
 
@@ -54,15 +53,19 @@ esac
 }
 
 
-	empHr=$( emplyHrs $empCheck)
+	empHr=$( emplyHrs $empCheck )
 
 
 
 total_working_days=$(($total_working_days + 1 ))
 total_working_hrs=$(($total_working_hrs + $empHr ))
 
+dailywage[$total_working_days]=$(( $empHr * $wege_per_hr ))
+
 done
 
-salary=$(($total_working_hrs * $wege_pe_hr ))
+salary=$(($total_working_hrs * $wege_per_hr ))
 
 echo "wage of full month is $salary"
+
+echo "wage of every day is ${dailywage[@]}"
