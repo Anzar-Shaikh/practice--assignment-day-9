@@ -27,3 +27,13 @@ part_time_hr=4
 
 
 
+case $check in
+
+	$absent)	empHr=0 ;;
+	$present)	empHr=8 ;;
+	$part_time) 	empHr=4 ;;
+
+esac
+
+echo "Employe hours of the day is $empHr. "
+
