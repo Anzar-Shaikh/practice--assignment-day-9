@@ -6,6 +6,7 @@ echo "Wlecome to Employ Wage Computation Problem."
 absent=0
 present=1
 part_time=2
+working_day=0
 
 check=$((RANDOM%3))
 
@@ -36,4 +37,8 @@ case $check in
 esac
 
 echo "Employe hours of the day is $empHr. "
+
+max_working_days=20
+total_working_days=0
+total_working_hrs=0
 
